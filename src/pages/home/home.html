@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ 'title' | translate}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <p>{{'welcome' | translate}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{'language' | translate}}</ion-label>
+      <ion-select #languageSelect [(ngModel)]="currentLang" (ionChange)="translate.use(currentLang)">
+        <ion-option *ngFor="let language of languages" [value]="language" [selected]="language === translate.currentLang">{{ language }}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
