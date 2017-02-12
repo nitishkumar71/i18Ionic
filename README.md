@@ -1,2 +1,2 @@
 # i18Ionic
-Internationalization using ng2-translate
+Ionic2 Internationalization using ng2-translate

@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AppLanguages {
-  private languages: Array<String>;
+  private languages: String[];
   constructor() {
     this.languages = ['en', 'hi'];
   }
 
-  public getLanguages(): Array<String> {
+  public getLanguages(): String[] {
     return this.languages;
   }
 }
